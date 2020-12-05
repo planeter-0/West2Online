@@ -1,4 +1,4 @@
-### West2Online Assignment
+### West2Online Assignments
 `Hello World!`
 
-*This is a repository for storing assessment task of West2Online.*
+*This is a repository for storing assessment tasks of West2Online.*
