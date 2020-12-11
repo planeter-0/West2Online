@@ -21,10 +21,10 @@ public class West2FriedChickenRestaurantTest {
         //// 售卖套餐
         // test 1
         System.out.println("Origin: "+west2.balance);
-        west2.sellSetMeal(West2FriedChickenRestaurant.setMealLinkedList.get(0));// OK，beer was removed,balance increase 20
+        west2.sellSetMeal(West2FriedChickenRestaurant.SET_MEALS.get(0));// OK，beer was removed,balance increase 20
         System.out.println("After: "+west2.balance);
         // test 2
-        west2.sellSetMeal(West2FriedChickenRestaurant.setMealLinkedList.get(1));// IngredientSortOutException
+        west2.sellSetMeal(West2FriedChickenRestaurant.SET_MEALS.get(1));// IngredientSortOutException
 
         //// 批量进货
         // test 1

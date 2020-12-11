@@ -1,6 +1,7 @@
 package com.assessment2;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class West2FriedChickenRestaurant implements FriedChickenRestaurant {
@@ -10,7 +11,7 @@ public class West2FriedChickenRestaurant implements FriedChickenRestaurant {
     protected double balance;
     protected LinkedList<Beer> beerLinkedList;
     protected LinkedList<Juice> juiceLinkedList;
-    protected static final LinkedList<SetMeal> setMealLinkedList = new LinkedList<>();
+    protected static final ArrayList<SetMeal> SET_MEALS = new ArrayList<>();
 
     static {
         //2种啤酒: 青岛，雪花
@@ -20,10 +21,10 @@ public class West2FriedChickenRestaurant implements FriedChickenRestaurant {
         Juice Orange = new Juice("Orange", 10, LocalDate.of(2020, 11, 1));
         Juice Apple = new Juice("Apple", 10, LocalDate.of(2020, 11, 1));
         //4种套餐: 套餐1(鸡翅+青岛啤酒)，套餐2(鸡翅+橙汁)，套餐3(鸡排+雪花啤酒)，套餐4(鸡排+苹果汁)
-        setMealLinkedList.add(new SetMeal("SetMeal_1", 20, "Wings", QingDao));
-        setMealLinkedList.add(new SetMeal("SetMeal_2", 22, "Wings", Orange));
-        setMealLinkedList.add(new SetMeal("SetMeal_3", 24, "Chop", XueHua));
-        setMealLinkedList.add(new SetMeal("SetMeal_4", 26, "Chop", Apple));
+        SET_MEALS.add(new SetMeal("SetMeal_1", 20, "Wings", QingDao));
+        SET_MEALS.add(new SetMeal("SetMeal_2", 22, "Wings", Orange));
+        SET_MEALS.add(new SetMeal("SetMeal_3", 24, "Chop", XueHua));
+        SET_MEALS.add(new SetMeal("SetMeal_4", 26, "Chop", Apple));
     }
 
     public West2FriedChickenRestaurant(double balance, LinkedList<Beer> beerLinkedList, LinkedList<Juice> juiceLinkedList) {
